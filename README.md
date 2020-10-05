@@ -24,17 +24,19 @@ Result:
   password: 'k1cB2mwUc9q1Q0HPIiI2/Zg1T6ZMGloukzuPIhAJ2oqs+rqVt5+2UgYYzzbJcC8CnKJ2C9KSHXir+O8+ToWjsQ==',
   salt: '8a40191bc15e99a71707c6308514f0568c20cb951538e1104d'
 }
+
 ```
 ## Verify
 ```
 // check entered password with stored hash
 let isPasswordMatch = saltHash.verifySaltHash(hashPassword.salt, hashPassword.password, 'test');
 
-console.log(isPasswordMatch);```
+console.log(isPasswordMatch);
 
 Result:
 
 true
+
 ```
 
 ## License
