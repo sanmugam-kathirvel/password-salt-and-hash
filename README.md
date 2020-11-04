@@ -14,7 +14,7 @@ npm install --save password-salt-and-hash
 import saltHash from 'password-salt-and-hash'
 
 // hash password
-let hashPassword = saltHash.generateSaltHash('test');
+let hashPassword = saltHash.generateSaltHash('foo');
 
 console.log(hashPassword);
 
@@ -29,7 +29,7 @@ Result:
 ## Verify
 ```
 // check entered password with stored hash
-let isPasswordMatch = saltHash.verifySaltHash(hashPassword.salt, hashPassword.password, 'test');
+let isPasswordMatch = saltHash.verifySaltHash(hashPassword.salt, hashPassword.password, 'foo');
 
 console.log(isPasswordMatch);
 
